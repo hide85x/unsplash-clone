@@ -73,11 +73,15 @@ export default {
       color: black;
       margin: 2px;
       border-radius: 10%;
-      height:30px;
-      width:30px;
+      height: 30px;
+      width: 30px;
       transition: filter 0.3s ease;
       &:hover {
         filter: invert(1);
+      }
+      @media (max-width: 700px) {
+        height: 20px;
+        width: 20px;
       }
     }
     .imgInfo {
@@ -87,22 +91,21 @@ export default {
         text-decoration: underline;
       }
       p {
-        padding:0 5px;
+        padding: 0 5px;
         margin: 0;
         font-weight: 300;
-        @media (max-width:700px) {
-            font-size: 0.6em;
-            
+        @media (max-width: 700px) {
+          font-size: 0.6em;
         }
       }
     }
   }
   img {
     width: 50%;
-    margin:0;
+    margin: 0;
     padding: 10px;
-    @media(max-width:700px) {
-        width: 100%;
+    @media (max-width: 700px) {
+      width: 100%;
     }
   }
 }
