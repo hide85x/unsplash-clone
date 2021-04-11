@@ -72,8 +72,9 @@ export default {
       background: white;
       color: black;
       margin: 2px;
-      padding: 10px;
       border-radius: 10%;
+      height:30px;
+      width:30px;
       transition: filter 0.3s ease;
       &:hover {
         filter: invert(1);
