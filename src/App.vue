@@ -10,16 +10,16 @@
           >
           Powered by creators everywhere.
         </p>
-        <Autocompletenpm />
+        <Searchbar />
       </div>
     </div>
   </v-app>
 </template>
 
 <script>
-import Autocompletenpm from "./components/Autocompletenpm.vue";
+import Searchbar from "./components/Searchbar.vue";
 export default {
-  components: { Autocompletenpm },
+  components: { Searchbar },
   data: () => ({}),
 };
 </script>
@@ -39,6 +39,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
+  padding: 5px;
   &__content {
     display: flex;
     flex-direction: column;

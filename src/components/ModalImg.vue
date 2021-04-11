@@ -4,8 +4,12 @@
       <div class="modalImg">
         <div class="header">
           <div class="imgInfo">
-            <p>taken by <span>{{ imgToModal.user}}</span> </p>
-            <p>on <span>{{ dateFormat }}</span></p>
+            <p>
+              taken by <span>{{ imgToModal.user }}</span>
+            </p>
+            <p>
+              on <span>{{ dateFormat }}</span>
+            </p>
           </div>
 
           <button class="btn" @click="close">X</button>
@@ -18,7 +22,7 @@
 </template>
 
 <script>
-import moment from 'moment'
+import moment from "moment";
 export default {
   name: "ModalImg",
   props: {
@@ -41,9 +45,9 @@ export default {
     console.log(this.imgToModal);
   },
   computed: {
-      dateFormat(){
-          return moment(new Date(this.imgToModal.createdAt)).format('MMMM YYYY')
-      }
+    dateFormat() {
+      return moment(new Date(this.imgToModal.createdAt)).format("MMMM YYYY");
+    },
   },
   methods: {
     close() {
@@ -62,6 +66,8 @@ export default {
   align-items: center;
   justify-content: center;
   .header {
+    background: rgba(0, 0, 0, 0.527);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +76,7 @@ export default {
       align-self: flex-start;
       background: white;
       color: black;
-      margin: 2px;
+      margin: 12px;
       padding: 2px;
       border-radius: 10%;
       transition: filter 0.3s ease;
@@ -80,10 +86,9 @@ export default {
     }
     .imgInfo {
       padding: 10px;
-      background: rgba(0, 0, 0, 0.527);
       width: 100%;
       span {
-          text-decoration: underline;
+        text-decoration: underline;
       }
       p {
         padding: 2px;

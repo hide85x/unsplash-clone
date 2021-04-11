@@ -45,12 +45,12 @@ export default {
       this.imgToModal = {
         user: e.target.attributes["data-user"].nodeValue,
         src: e.target.src,
-        createdAt: e.target.attributes['data-created'].nodeValue
+        createdAt: e.target.attributes["data-created"].nodeValue,
       };
     },
   },
   mounted() {
-    console.log(new Date("2019-06-17T17:43:10-04:00"))
+    console.log(new Date("2019-06-17T17:43:10-04:00"));
     this.macy = new Macy({
       container: this.$refs["resultsImg"],
       trueOrder: false,
@@ -61,7 +61,7 @@ export default {
         1200: 4,
         940: 3,
         520: 2,
-        400: 1,
+        400: 2,
       },
     });
   },
@@ -90,6 +90,9 @@ export default {
     width: 60%;
     margin: auto;
     padding: 20px;
+    @media (max-width: 600px) {
+      width: 40%;
+    }
   }
 }
 .resultsImg {
