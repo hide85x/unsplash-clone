@@ -80,8 +80,8 @@ export default {
         filter: invert(1);
       }
       @media (max-width: 700px) {
-        height: 20px;
-        width: 20px;
+        height: 22px;
+        width: 22px;
       }
     }
     .imgInfo {
