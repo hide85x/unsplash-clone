@@ -95,7 +95,7 @@ export default {
         margin: 0;
         font-weight: 300;
         @media (max-width: 700px) {
-          font-size: 0.6em;
+          font-size: 0.8em;
         }
       }
     }
