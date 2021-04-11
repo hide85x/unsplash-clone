@@ -68,32 +68,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.modalImg {
-  background: rgba(0, 0, 0, 0.712);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  .imgInfo {
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.527);
-    width: 100%;
-    p {
-      padding: 2px;
-      margin: 0;
-      font-weight: 300;
-    }
-  }
-  img {
-    width: 60%;
-    margin: auto;
-    padding: 20px;
-    @media (max-width: 600px) {
-      width: 40%;
-    }
-  }
-}
+
 .resultsImg {
   margin-top: 20px;
   background: white;

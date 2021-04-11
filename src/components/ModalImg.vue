@@ -1,5 +1,5 @@
 <template>
-  <v-dialog overlay-opacity="0.9" v-model="dialog" dark width="600">
+  <v-dialog overlay-opacity="0.9" v-model="dialog" dark width="80%">
     <template>
       <div class="modalImg">
         <div class="header">
@@ -63,7 +63,6 @@ export default {
   justify-content: center;
   .header {
     background: rgba(0, 0, 0, 0.527);
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,8 +71,8 @@ export default {
       align-self: flex-start;
       background: white;
       color: black;
-      margin: 12px;
-      padding: 2px;
+      margin: 2px;
+      padding: 10px;
       border-radius: 10%;
       transition: filter 0.3s ease;
       &:hover {
@@ -81,22 +80,29 @@ export default {
       }
     }
     .imgInfo {
-      padding: 10px;
+      padding: 1px;
       width: 100%;
       span {
         text-decoration: underline;
       }
       p {
-        padding: 2px;
+        padding:0 5px;
         margin: 0;
         font-weight: 300;
+        @media (max-width:700px) {
+            font-size: 0.6em;
+            
+        }
       }
     }
   }
   img {
-    width: 60%;
-    margin: auto;
-    padding: 20px;
+    width: 50%;
+    margin:0;
+    padding: 10px;
+    @media(max-width:700px) {
+        width: 100%;
+    }
   }
 }
 </style>
