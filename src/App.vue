@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  min-height: 100vh;
+}
 .hero {
   display: flex;
   flex-direction: column;
