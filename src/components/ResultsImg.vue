@@ -50,6 +50,7 @@ export default {
     },
   },
   mounted() {
+    console.log(new Date("2019-06-17T17:43:10-04:00"))
     this.macy = new Macy({
       container: this.$refs["resultsImg"],
       trueOrder: false,

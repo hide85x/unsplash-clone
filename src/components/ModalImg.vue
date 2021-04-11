@@ -4,8 +4,8 @@
       <div class="modalImg">
         <div class="header">
           <div class="imgInfo">
-            <p>{{ imgToModal.user}}</p>
-            <p>{{ imgToModal.createdAt }}</p>
+            <p>taken by <span>{{ imgToModal.user}}</span> </p>
+            <p>on <span>{{ dateFormat }}</span></p>
           </div>
 
           <button class="btn" @click="close">X</button>
@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import moment from 'moment'
 export default {
   name: "ModalImg",
   props: {
@@ -38,6 +39,11 @@ export default {
   },
   mounted() {
     console.log(this.imgToModal);
+  },
+  computed: {
+      dateFormat(){
+          return moment(new Date(this.imgToModal.createdAt)).format('MMMM YYYY')
+      }
   },
   methods: {
     close() {
@@ -76,6 +82,9 @@ export default {
       padding: 10px;
       background: rgba(0, 0, 0, 0.527);
       width: 100%;
+      span {
+          text-decoration: underline;
+      }
       p {
         padding: 2px;
         margin: 0;
