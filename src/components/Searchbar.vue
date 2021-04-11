@@ -88,10 +88,13 @@ export default {
 
 <style lang="scss" scoped>
 .searchbar {
- max-width: 100vh;
+ width: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (max-width:700px) {
+    width: 100%;
+  };
 
   form {
     position: relative;

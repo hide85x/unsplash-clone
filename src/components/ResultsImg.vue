@@ -50,16 +50,15 @@ export default {
     },
   },
   mounted() {
-    console.log(new Date("2019-06-17T17:43:10-04:00"));
     this.macy = new Macy({
       container: this.$refs["resultsImg"],
       trueOrder: false,
       waitForImages: true,
       margin: 0,
-      columns: 3,
+      columns: 4,
       breakAt: {
         1200: 4,
-        940: 3,
+        940: 4,
         520: 2,
         400: 2,
       },
@@ -103,6 +102,7 @@ export default {
     background: transparent;
     padding: 5px;
     display: flex;
+    width:100%;
     &:hover {
       box-shadow: 0 0 20px 10000px rgba(0, 0, 0, 0.781);
       z-index: 2;
