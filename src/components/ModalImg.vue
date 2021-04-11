@@ -4,12 +4,8 @@
       <div class="modalImg">
         <div class="header">
           <div class="imgInfo">
-            <p>
-              taken by <span>{{ imgToModal.user }}</span>
-            </p>
-            <p>
-              on <span>{{ dateFormat }}</span>
-            </p>
+            <p>taken by {{ imgToModal.user }}</p>
+            <p>on {{ dateFormat }}</p>
           </div>
 
           <button class="btn" @click="close">X</button>
